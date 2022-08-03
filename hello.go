@@ -13,6 +13,6 @@ func NewHello(l *log.Logger) *Hello {
 	return &Hello{l}
 }
 
-func (h *Hello) ServeHTTP(rw http.ResponseWriter, r *http.Response) {
+func (h *Hello) ServeHTTP(rw http.ResponseWriter, r *http.ResponseWriter) {
 	h.l.Println("Hello World")
 }
